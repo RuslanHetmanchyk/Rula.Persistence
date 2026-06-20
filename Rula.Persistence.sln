@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rula.Persistence", "Rula.Persistence\Rula.Persistence.csproj", "{A52ED7E7-29BB-4B21-B0AC-36581F418F2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rula.Persistence.Tests", "Rula.Persistence.Tests\Rula.Persistence.Tests.csproj", "{4781145F-C202-44AD-BE94-FBBA4146B0F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A52ED7E7-29BB-4B21-B0AC-36581F418F2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A52ED7E7-29BB-4B21-B0AC-36581F418F2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A52ED7E7-29BB-4B21-B0AC-36581F418F2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A52ED7E7-29BB-4B21-B0AC-36581F418F2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4781145F-C202-44AD-BE94-FBBA4146B0F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4781145F-C202-44AD-BE94-FBBA4146B0F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4781145F-C202-44AD-BE94-FBBA4146B0F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4781145F-C202-44AD-BE94-FBBA4146B0F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
