@@ -1,3 +1,5 @@
+![Build](https://github.com/RuslanHetmanchyk/Rula.Persistence/actions/workflows/build.yml/badge.svg)
+
 # Rula.Persistence
 
 Lightweight, extensible and platform-agnostic save system for .NET applications and games.
