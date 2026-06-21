@@ -32,6 +32,4 @@ jobs:
         run: dotnet pack --configuration Release --no-build -o ./artifacts
 
       - name: Publish to NuGet
-        uses: NuGet/actions/nuget-push@v1
-        with:
-          packages-to-push: ./artifacts/*.nupkg
+        run: dotnet nuget push ./artifacts/*.nupkg --source https://api.nuget.org/v3/index.json
