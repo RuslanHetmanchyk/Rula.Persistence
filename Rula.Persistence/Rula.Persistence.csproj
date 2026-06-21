@@ -5,9 +5,12 @@
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageId>Rula.Persistence</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Ruslan Hetmanchyk</Authors>
     <Company>Rula Games</Company>
+	<RepositoryUrl>https://github.com/RuslanHetmanchyk/Rula.Persistence</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
+	<PackageProjectUrl>https://github.com/RuslanHetmanchyk/Rula.Persistence</PackageProjectUrl>
     <Description>Lightweight, extensible and platform-agnostic save system for .NET applications and games.</Description>
     <PackageTags>persistence;save;save-system;serialization;storage;games;unity</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
