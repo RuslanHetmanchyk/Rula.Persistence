@@ -22,11 +22,6 @@ jobs:
         with:
           dotnet-version: 8.0.x
 
-      - name: Debug OIDC
-        run: |
-          echo "URL=${ACTIONS_ID_TOKEN_REQUEST_URL}"
-          echo "TOKEN=${ACTIONS_ID_TOKEN_REQUEST_TOKEN:+present}"
-
       - name: Restore dependencies
         run: dotnet restore
 
@@ -36,5 +31,11 @@ jobs:
       - name: Pack
         run: dotnet pack --configuration Release --no-build -o ./artifacts
 
+      - name: NuGet login
+        id: login
+        uses: NuGet/login@v1
+        with:
+          user: Rula
+
       - name: Publish to NuGet
-        run: dotnet nuget push ./artifacts/*.nupkg --source https://api.nuget.org/v3/index.json
+        run: dotnet nuget push ./artifacts/*.nupkg --api-key "${{ steps.login.outputs.NUGET_API_KEY }}" --source https://api.nuget.org/v3/index.json
