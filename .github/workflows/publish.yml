@@ -17,15 +17,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Debug OIDC
-        run: |
-          echo "URL=${ACTIONS_ID_TOKEN_REQUEST_URL}"
-          echo "TOKEN=${ACTIONS_ID_TOKEN_REQUEST_TOKEN:+present}"
-
       - name: Setup .NET
         uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 8.0.x
+
+      - name: Debug OIDC
+        run: |
+          echo "URL=${ACTIONS_ID_TOKEN_REQUEST_URL}"
+          echo "TOKEN=${ACTIONS_ID_TOKEN_REQUEST_TOKEN:+present}"
 
       - name: Restore dependencies
         run: dotnet restore
